@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:wght@100;200;400;500;600&family=Inconsolata:wght@200;300;400;500;600;700&family=Montserrat:wght@100;300;400;500&family=Raleway:wght@200;300;400;500&family=Roboto+Mono:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* 
+  NORMALNE
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+/*
+KOKS TOTALNY
+font-family: 'Cormorant', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Space Grotesk', sans-serif;
+*/
+:root {
+    --pogblue: #34568B;
+    --poggreen: #88B04B;
+    --lightgreen: #9BC400;
+    --darkgreen: #478559;
+    --okpink: #F95D9B;
+    --coolaqua: #39A0CA;
+    --okpurple1: #845BB3;
+    --okpurple2: #7D3CFF;
+    --okgray1: #494DSF;
+    --okgray2: 393F4D;
+    --prgray: #8076A3;
+    --okwhite1: #E5EAF5;
+    --okwhite2: #EDEDED;
+    --okwhite: #f8f8f8: --dark: #1D1E22;
+    --cooldark3: #303136;
+    --cooldark4: #191919;
+    --cooldark5: #1b1c1e;
+    --bluedark: #2c333f;
+    --bluedark2: #162c35;
+
+
+}
+
+
+body {
+    height: 150rem;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    border-radius: 1rem 0rem 1rem 0rem;
+    -webkit-border-radius: 1rem 0rem 1rem 0rem;
+    -moz-border-radius: 1rem 0rem 1rem 0rem;
+    -ms-border-radius: 1rem 0rem 1rem 0rem;
+    -o-border-radius: 1rem 0rem 1rem 0rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+}
+
+
+.site-navbar {
+    width: 100%;
+    height: 6rem;
+    background-color: #151515;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+}
+
+.navbar-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nv-title {
+    width: clamp(16rem, 22rem, 30vw);
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nv-elements {
+    width: clamp(10rem, 60rem, 60vw);
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nv-elements button {
+
+    width: 19%;
+    border: none;
+    height: 3.5rem;
+    background: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.site-firstcon {
+    width: 100%;
+    height: clamp(32rem, 48rem, 50vw);
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-firstcon:hover div {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.site-firstcon-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('images/city.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: none;
+    transition: ease-in 500ms;
+    -webkit-transition: ease-in 500ms;
+    -moz-transition: ease-in 500ms;
+    -ms-transition: ease-in 500ms;
+    -o-transition: ease-in 500ms;
+    -webkit-filter: none;
+}
+
+.site-firstcon-con {
+
+    width: 50%;
+    height: 50%;
+
+    position: relative;
+}
+
+
+
+
+
+.tit-spgro {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #dad9d9;
+    font-weight: normal;
+}
+
+.tit-mont {
+    font-family: 'Montserrat', sans-serif;
+    color: #dad9d9;
+    font-weight: normal;
+}
+
+.fsize1 {
+    font-size: clamp(1.1rem, 1.5rem, 2vw);
+}
+
+.fsize2 {
+    font-size: clamp(1.1rem, 1.5rem, 2vw);
+}
+
+.fsize3 {
+    font-size: clamp(1.1rem, 1.5rem, 2vw);
+}
+
+.fsize4 {
+    font-size: clamp(1.3rem, 1.7rem, 2vw);
+}
+
+.fsize5 {
+    font-size: clamp(1.1rem, 1.5rem, 2vw);
+}
+
+
+#home {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-inline: 1rem;
+    background: url('images/white-home.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+#roll {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .nv-elements {
+        display: none;
+    }
+
+
+
+
+
+}
