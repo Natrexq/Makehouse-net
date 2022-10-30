@@ -64,36 +64,46 @@ font-family: 'Space Grotesk', sans-serif;
         margin-inline-end: 0px;
     }
 }
+
 @keyframes breath1 {
     0% {
         box-shadow: 0px 0px 30px #3bb1a7;
     }
+
     25% {
         box-shadow: 0px 0px 60px #3bb1a7;
     }
+
     50% {
         box-shadow: 0px 0px 10px #3bb1a7;
     }
+
     75% {
         box-shadow: 0px 0px 60px #3bb1a7;
     }
+
     100% {
         box-shadow: 0px 0px 30px #3bb1a7;
     }
 }
+
 @keyframes breath2 {
     0% {
         box-shadow: 0px 0px 30px #6e6423;
     }
+
     25% {
         box-shadow: 0px 0px 60px #6e6423;
     }
+
     50% {
         box-shadow: 0px 0px 10px #6e6423;
     }
+
     75% {
         box-shadow: 0px 0px 60px #6e6423;
     }
+
     100% {
         box-shadow: 0px 0px 30px #6e6423;
     }
@@ -102,7 +112,7 @@ font-family: 'Space Grotesk', sans-serif;
 
 
 body {
-    height: clamp(190rem,260rem,200vw);
+    height: clamp(190rem, 260rem, 200vw);
     background-color: #1a1a1a;
     margin: 0;
 }
@@ -268,14 +278,15 @@ body {
 
 
 }
-.site-preoffer{
+
+.site-preoffer {
     cursor: default;
     width: 100%;
-    height: clamp(5rem,15rem, 12vw);
+    height: clamp(5rem, 15rem, 12vw);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: clamp(3rem,10rem,11vw);
+    padding-top: clamp(3rem, 10rem, 11vw);
     flex-direction: column;
     opacity: 80%;
     transition: ease-in 300ms;
@@ -284,27 +295,31 @@ body {
     -ms-transition: ease-in 300ms;
     -o-transition: ease-in 300ms;
 }
-.site-preoffer:hover{
+
+.site-preoffer:hover {
     opacity: 100%;
 
 }
-.bighome{
-    width: clamp(30px,65px,5vw);
-    height: clamp(30px,65px,5vw);
+
+.bighome {
+    width: clamp(30px, 65px, 5vw);
+    height: clamp(30px, 65px, 5vw);
     display: block;
     margin-inline: 1rem;
     background: url('images/white-home.png');
     background-size: cover;
     margin: 1%;
 }
-.site-preoffer h2{
+
+.site-preoffer h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.3rem,2.4rem,4vw);
+    font-size: clamp(1.3rem, 2.4rem, 4vw);
     color: #ededed;
     display: block;
     margin: 0;
 }
-.site-offer{
+
+.site-offer {
     width: 100%;
     height: clamp(55rem, 65rem, 70vw);
 
@@ -312,13 +327,13 @@ body {
     justify-content: center;
 
     align-items: center;
-    
-   
+
+
     position: relative;
-    
+
 }
 
-.offer-con{
+.offer-con {
     width: 100%;
     height: 100%;
     position: relative;
@@ -328,19 +343,21 @@ body {
     flex-wrap: wrap;
     gap: 5%;
 }
-.offer-back{
+
+.offer-back {
     width: 90%;
     background-image: url('images/backkk.jpeg');
     background-size: cover;
     height: clamp(40rem, 45rem, 50vw);
     position: absolute;
     opacity: 10%;
-    box-shadow: 0px 0px 30px #3bb1a7;
+    box-shadow: 0px 0px 30px #b5bdb6;
 }
-.offer-plan1{
-    width: clamp(18rem,33rem,50vw);
-    height: clamp(19rem,35rem,50vw);
-    background-image: linear-gradient(to left,#3bb1a7,#2b857d);
+
+.offer-plan1 {
+    width: clamp(18rem, 33rem, 50vw);
+    height: clamp(19rem, 35rem, 50vw);
+    background-image: linear-gradient(to left, #3bb1a7, #2b857d);
     position: relative;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
@@ -350,19 +367,20 @@ body {
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
-   
+
 }
-.offer-plan1:hover{
+
+.offer-plan1:hover {
     animation-name: breath1;
     animation-duration: 2s;
 
     box-shadow: 0px 0px 30px#236e68;
 }
 
-.offer-plan2{
-    width: clamp(18rem,33rem,50vw);
-    height: clamp(19rem,35rem,50vw);
-    background-image: linear-gradient(to right,#d0de0c,#a79813);
+.offer-plan2 {
+    width: clamp(18rem, 33rem, 50vw);
+    height: clamp(19rem, 35rem, 50vw);
+    background-image: linear-gradient(to right, #d0de0c, #a79813);
     box-shadow: 0px 0px 30px #6e6423;
     border-radius: 10%;
     -webkit-border-radius: 10%;
@@ -372,15 +390,17 @@ body {
     position: relative;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
-    
+
 }
-.offer-plan2:hover{
+
+.offer-plan2:hover {
     animation-name: breath2;
     animation-duration: 2s;
     box-shadow: 0px 0px 30px #6e6423;
- 
+
 }
-.plan{
+
+.plan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,20 +412,22 @@ body {
     -ms-transition: 300ms ease;
     -o-transition: 300ms ease;
 }
-.plan:hover{
+
+.plan:hover {
     opacity: 100%;
 }
-.plan button{
-    width: clamp(6rem,12rem,18vw);
+
+.plan button {
+    width: clamp(6rem, 12rem, 18vw);
     position: absolute;
     bottom: 0;
     margin: 3%;
-    height: clamp(1.5rem,3rem,5vw);
+    height: clamp(1.5rem, 3rem, 5vw);
     border: none;
     background-color: #1a1a1a;
     font-family: 'Space Grotesk', sans-serif;
 
-    font-size: clamp(0.9rem,1.2rem,2vw);
+    font-size: clamp(0.9rem, 1.2rem, 2vw);
     font-weight: bold;
     border-radius: 1vw;
     -webkit-border-radius: 1vw;
@@ -413,31 +435,38 @@ body {
     -ms-border-radius: 1vw;
     -o-border-radius: 1vw;
 }
-.plan h1{
+
+.plan h1 {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.1rem,1.9rem,2vw);
+    font-size: clamp(1.1rem, 1.9rem, 2vw);
 }
-.plan h2{
+
+.plan h2 {
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.1rem,1.4rem,2vw);
+    font-size: clamp(1.1rem, 1.4rem, 2vw);
 }
-.txbl{
-   
+
+.txbl {
+
     color: #3bb1a7;
 }
-.txyl{
+
+.txyl {
     color: #d0de0c;
 }
-.txblb{
-   
+
+.txblb {
+
     color: #13e6d4;
 }
-.txylb{
+
+.txylb {
     color: #d1df0f;
 }
-.txdv{
+
+.txdv {
     text-align: center;
     background-color: #1a1a1a;
     padding: 4%;
@@ -447,39 +476,195 @@ body {
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
 }
-    .desc{
-        width: clamp(12rem,20rem,24vw);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-inline:2rem;
-        flex-direction: column;
-        padding-top: 1rem;
-        height: clamp(7rem,19rem,30vw);
 
-    }
-    .desc h3{
-        font-family: 'Space Grotesk', sans-serif;
-        margin: 0.1rem;
-        font-size: clamp(0.7rem,1.4rem,2vw);
-        text-align: center;
-    }
-    .desc h4{
-        text-align: center;
-        font-family: 'Space Grotesk', sans-serif;
-        margin: 2%;
-        font-size: clamp(0.5rem,1rem,2vw);
-    }
+.desc {
+    cursor: default;
+    width: clamp(12rem, 20rem, 24vw);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 2rem;
+    flex-direction: column;
+    padding-top: 1rem;
+    height: clamp(7rem, 19rem, 30vw);
+
+}
+
+.desc h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0.1rem;
+    font-size: clamp(0.7rem, 1.4rem, 2vw);
+    text-align: center;
+}
+
+.desc h4 {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 2%;
+    font-size: clamp(0.5rem, 1rem, 2vw);
+}
 
 
 
-    .site-news{
-        width: 100%;
-        height: 30rem;
-      
+.site-news {
+    width: 100%;
 
-    }
+    height: clamp(36rem, 60rem, 70vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    flex-direction: column;
 
+}
+
+.news-sec {
+    cursor: default;
+    padding-inline: clamp(3rem, 5rem, 6vw);
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3bb1a7;
+    filter: drop-shadow(0px 0px 10px #3bb1a7);
+    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+    opacity: 90%;
+    transition: ease-in 300ms;
+    -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -ms-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+}
+
+.news-sec:hover {
+    opacity: 100%;
+}
+
+.news-sec h1 {
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.8rem, 2vw);
+}
+
+.news {
+    cursor: default;
+    border-radius: 1rem;
+    width: clamp(18rem, 60rem, 65vw);
+    height: clamp(26rem, 40rem, 60vw);
+    background-color: #3bb1a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    filter: drop-shadow(0px 0px 10px #3bb1a7);
+    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+    transition: ease 300ms;
+    -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -ms-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+    opacity: 90%;
+}
+
+.news:hover {
+    opacity: 100%;
+}
+
+.news-con {
+    width: 100%;
+    height: 90%;
+
+
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/house.jpg');
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.news-text {
+    width: clamp(16rem, 30rem, 40vw);
+    height: clamp(13rem, 20rem, 30vw);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(239, 239, 239, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-text h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.news-text h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.news-text button {
+    margin: 2%;
+    width: clamp(7rem, 14rem, 30vw);
+    height: clamp(2.5rem, 6rem, 3vw);
+    background-color: #349b93;
+    filter: drop-shadow(0px 0px 10px #3bb1a7);
+    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: clamp(1rem, 1rem, 4vw);
+    font-size: clamp(0.8rem, 1.2rem, 2vw);
+    font-weight: bold;
+    border: none;
+    color: #ededed;
+    -webkit-border-radius: clamp(1rem, 1rem, 4vw);
+    -moz-border-radius: clamp(1rem, 1rem, 4vw);
+    -ms-border-radius: clamp(1rem, 1rem, 4vw);
+    -o-border-radius: clamp(1rem, 1rem, 4vw);
+}
+
+.news-text h2 {
+
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0.1rem;
+    font-size: clamp(1rem, 1.4rem, 2vw);
+    text-align: center;
+    font-weight: bold;
+    color: #ededed;
+
+
+
+}
+
+.news-text h3 {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 2%;
+    font-weight: normal;
+    color: #ededed;
+    font-size: clamp(0.7rem, 1rem, 2vw);
+}
+
+.site-end {
+    width: 100%;
+    height: 37rem;
+    background-color: #111111;
+}
 
 
 
@@ -723,7 +908,7 @@ body {
         -webkit-filter: none;
     }
 
-   
+
 
 
 }
