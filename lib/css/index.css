@@ -110,9 +110,12 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    height: clamp(190rem, 260rem, 200vw);
+    height: clamp(179rem, 236rem, 260vw);
     background-color: #1a1a1a;
     margin: 0;
 }
@@ -284,22 +287,35 @@ body {
     width: 100%;
     height: clamp(5rem, 15rem, 12vw);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     padding-top: clamp(3rem, 10rem, 11vw);
-    flex-direction: column;
+
     opacity: 80%;
     transition: ease-in 300ms;
     -webkit-transition: ease-in 300ms;
     -moz-transition: ease-in 300ms;
     -ms-transition: ease-in 300ms;
     -o-transition: ease-in 300ms;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to bottom, #1e1e1e, #1a1a1a);
+
+
 }
 
-.site-preoffer:hover {
+.preoffer {
+    padding-inline: 3%;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #1e1e1e, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: clamp(6rem, 12rem, 18vw);
+    border-bottom: 4px solid #b1953b;
     opacity: 100%;
-
 }
+
 
 .bighome {
     width: clamp(30px, 65px, 5vw);
@@ -308,15 +324,19 @@ body {
     margin-inline: 1rem;
     background: url('images/white-home.png');
     background-size: cover;
-    margin: 1%;
+
+
 }
 
 .site-preoffer h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(1.3rem, 2.4rem, 4vw);
+    font-size: clamp(1.3rem, 2.2rem, 4vw);
     color: #ededed;
     display: block;
     margin: 0;
+
+
+
 }
 
 .site-offer {
@@ -352,7 +372,7 @@ body {
     position: absolute;
     opacity: 10%;
     box-shadow: 0px 0px 30px #b5bdb6;
- 
+
 }
 
 .offer-plan1 {
@@ -403,7 +423,7 @@ body {
 
 .plan {
     display: flex;
- 
+
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -424,7 +444,7 @@ body {
     position: absolute;
     bottom: 0;
     margin: 3%;
-    height: clamp(1.5rem, 3rem, 5vw);
+    height: clamp(2rem, 3rem, 5vw);
     border: none;
     background-color: #1a1a1a;
     font-family: 'Space Grotesk', sans-serif;
@@ -510,32 +530,43 @@ body {
 
 .site-news {
     width: 100%;
-
     height: clamp(36rem, 60rem, 70vw);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3%;
     flex-direction: column;
-
-}
-
-.news-sec {
-    cursor: default;
-    padding-inline: clamp(3rem, 5rem, 6vw);
-    color: #ededed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3bb1a7;
-    filter: drop-shadow(0px 0px 10px #3bb1a7);
-    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+    background-color: #151515;
     opacity: 90%;
     transition: ease-in 300ms;
     -webkit-transition: ease-in 300ms;
     -moz-transition: ease-in 300ms;
     -ms-transition: ease-in 300ms;
     -o-transition: ease-in 300ms;
+}
+
+.site-news:hover {
+    opacity: 100%;
+}
+
+
+.news-sec {
+    cursor: default;
+    padding-inline: clamp(4rem, 6rem, 7vw);
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+
+    opacity: 90%;
+
+    transition: ease-in 300ms;
+    -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -ms-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+    border-bottom: 4px solid #3bb1a7;
 }
 
 .news-sec:hover {
@@ -551,20 +582,16 @@ body {
 
 .news {
     cursor: default;
-    border-radius: 1rem;
+
     width: clamp(18rem, 60rem, 65vw);
-    height: clamp(26rem, 40rem, 60vw);
-    background-color: #3bb1a7;
+    height: clamp(21rem, 35rem, 50vw);
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    filter: drop-shadow(0px 0px 10px #3bb1a7);
-    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+
+    border-bottom: 4px solid #b1953b;
     transition: ease 300ms;
     -webkit-transition: ease-in 300ms;
     -moz-transition: ease-in 300ms;
@@ -625,9 +652,9 @@ body {
     margin: 2%;
     width: clamp(7rem, 14rem, 30vw);
     height: clamp(2.5rem, 6rem, 3vw);
-    background-color: #349b93;
-    filter: drop-shadow(0px 0px 10px #3bb1a7);
-    -webkit-filter: drop-shadow(0px 0px 10px #3bb1a7);
+    background-color: #3b88b1;
+    filter: drop-shadow(0px 0px 10px #2b6685);
+    -webkit-filter: drop-shadow(0px 0px 10px #2b6685);
     font-family: 'Space Grotesk', sans-serif;
     border-radius: clamp(1rem, 1rem, 4vw);
     font-size: clamp(0.8rem, 1.2rem, 2vw);
@@ -664,8 +691,145 @@ body {
 
 .site-end {
     width: 100%;
-    height: 37rem;
+    height: clamp(40rem, 30rem, 40vw);
     background-color: #111111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.end-contact {
+
+    width: clamp(20rem, 40rem, 50vw);
+    height: 20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+
+}
+
+.contact-th h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
+    color: #ededed;
+    font-weight: normal;
+}
+
+.contact-th h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(0.5rem, 1rem, 2vw);
+    margin: 0.2rem;
+    color: #3bb1a7;
+}
+
+.contact-th {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    text-align: center;
+
+
+
+}
+
+.map {
+    margin: 0;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+
+}
+
+.end-newsletter {
+
+    width: clamp(20rem, 40rem, 50vw);
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    flex-direction: column;
+
+
+}
+
+.newsletter-buts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: 0;
+}
+
+.end-newsletter input {
+    width: clamp(10rem, 12rem, 40vw);
+    height: clamp(2rem, 2rem, 20vw);
+    font-size: 95%;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #1f1f1f;
+    color: #3bb1a7;
+    border: none;
+
+    border-bottom: 4px solid #3bb1a7;
+
+}
+
+.end-newsletter input::placeholder {
+    color: #3bb1a7;
+}
+
+.end-newsletter input:focus {
+    outline: none;
+}
+
+.end-newsletter button {
+    width: clamp(5rem, 8rem, 20vw);
+    height: clamp(3rem, 3rem, 20vw);
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    color: #e6e6e6;
+    background-color: #b1953b;
+    border: none;
+    border: none;
+    border-bottom: 4px solid #69581e;
+    transition: 300ms ease-in;
+    -webkit-transition: 300ms ease-in;
+    -moz-transition: 300ms ease-in;
+    -ms-transition: 300ms ease-in;
+    -o-transition: 300ms ease-in;
+}
+
+.end-newsletter button:hover {
+    background-color: #c3a131;
+    border-bottom: 4px solid #756120;
+}
+
+.end-newsletter h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #cacaca;
+    font-weight: normal;
+
 }
 
 
@@ -802,10 +966,10 @@ body {
 }
 
 @media screen and (max-width: 1240px) {
-    
+
     .offer-plan1 {
-        width: clamp(18rem, 30rem, 50vw);
-        height: clamp(23rem, 23.5rem, 35vw);
+        width: clamp(14rem, 25rem, 50vw);
+        height: clamp(24rem, 30.5rem, 35vw);
         background-image: linear-gradient(to left, #3bb1a7, #2b857d);
         position: relative;
         filter: grayscale(40%);
@@ -816,11 +980,12 @@ body {
         -moz-border-radius: 10%;
         -ms-border-radius: 10%;
         -o-border-radius: 10%;
-    
+
     }
+
     .offer-plan2 {
-        width: clamp(18rem, 30rem, 50vw);
-        height: clamp(23rem, 23.5rem, 35vw);
+        width: clamp(14rem, 25rem, 50vw);
+        height: clamp(24rem, 30.5rem, 35vw);
         background-image: linear-gradient(to right, #d0de0c, #a79813);
         box-shadow: 0px 0px 30px #6e6423;
         border-radius: 10%;
@@ -831,22 +996,23 @@ body {
         position: relative;
         filter: grayscale(40%);
         -webkit-filter: grayscale(40%);
-    
+
     }
 
     .desc h3 {
         font-family: 'Space Grotesk', sans-serif;
         margin: 0.1rem;
-        font-size: clamp(0.8rem, 1.1rem, 2vw);
+        font-size: clamp(1rem, 1.1rem, 2vw);
         text-align: center;
     }
-    
+
     .desc h4 {
         text-align: center;
         font-family: 'Space Grotesk', sans-serif;
         margin: 2%;
-        font-size: clamp(0.65rem, 0.8rem, 2vw);
+        font-size: clamp(0.8rem, 0.8rem, 2vw);
     }
+
     .desc {
         cursor: default;
         width: 90%;
@@ -857,10 +1023,10 @@ body {
         flex-direction: column;
         padding-top: 1rem;
         height: clamp(7rem, 19rem, 30vw);
-    
+
     }
 
-    
+
 }
 
 @media screen and (max-width: 700px) {
@@ -891,6 +1057,14 @@ body {
         height: 1.8rem;
 
         background-image: url('images/menu_def.png');
+        background-size: cover;
+    }
+
+    .rollaf {
+        width: 1.8rem;
+        height: 1.8rem;
+
+        background-image: url('images/menu_rolled.png');
         background-size: cover;
     }
 
@@ -973,9 +1147,12 @@ body {
     }
 
 
-
-
 }
+
+
+
+
+
 
 @media screen and (max-width: 855px) {
 

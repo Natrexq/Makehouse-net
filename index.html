@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="lib/css/index.css">
 </head>
 
-<body>
+<body id="home_sec">
     <div class="cookies">
 
 
@@ -31,16 +31,16 @@
                 </span>
             </div>
             <div class="nv-elements">
-                <button>
+                <button id="gohome">
                     <h2 class="tit-mont">Home</h2>
                 </button>
-                <button>
+                <button id="gooffer">
                     <h2 class="tit-mont">Offer</h2>
                 </button>
-                <button>
+                <button id="gonews">
                     <h2 class="tit-mont">News</h2>
                 </button>
-                <button>
+                <button id="gocontact">
                     <h2 class="tit-mont">Contact</h2>
                 </button>
                 <button>
@@ -55,16 +55,16 @@
     </div>
     <div id="nvmob" class="navbar-mobile">
 
-        <button>
+        <button id="gohome">
             <h2 class="tit-mont">Home</h2>
         </button>
-        <button>
+        <button id="gooffer">
             <h2 class="tit-mont">Offer</h2>
         </button>
-        <button>
+        <button id="gonews">
             <h2 class="tit-mont">News</h2>
         </button>
-        <button>
+        <button id="gocontact">
             <h2 class="tit-mont">Contact</h2>
         </button>
         <button>
@@ -96,11 +96,14 @@
 
     </div>
     <div class="site-preoffer">
+        <div class="preoffer">
+            <span class="bighome"> </span>
+            <h2>Our Offers of plans:</h2>
+        </div>
 
-        <span class="bighome"> </span>
-        <h2>Our Offers of plans:</h2>
+
     </div>
-    <div class="site-offer">
+    <div class="site-offer" id="offer_sec">
 
 
         <div class="offer-back">
@@ -147,7 +150,7 @@
 
 
     </div>
-    <div class="site-news">
+    <div class="site-news" id="news_sec">
         <div class="news-sec">
             <h1>News:</h1>
         </div>
@@ -168,7 +171,31 @@
         </div>
 
     </div>
-    <div class="site-end">
+    <div class="site-end" id="end_sec">
+
+        <div class="end-contact">
+            <div class="contact-th">
+                <h2>Contact:</h2>
+                <h3>Phone: (339) 949-1754</h3>
+                <h3>Email: mkhouse@contact.com</h3>
+                <h3>Company Adress: Poland, Choroszcz</h3>
+            </div>
+
+            <div class="map">
+                <div class="gmap_canvas"><iframe class="canvas" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=CHoroszcz&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="0" marginheight="0" marginwidth="0"></iframe></div>
+            </div>
+        </div>
+        <div class="end-newsletter">
+            <h2>Sing Up to Newsletter:</h2>
+            <div class="newsletter-buts">
+                <input placeholder="youremail@domain.com" type="text">
+                <button>Sing Up </button>
+            </div>
+
+        </div>
+
 
 
 
