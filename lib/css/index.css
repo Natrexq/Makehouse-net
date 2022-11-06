@@ -39,76 +39,6 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 
-@keyframes bouceing {
-    0% {
-        margin-inline-end: 0px;
-    }
-
-    20% {
-        margin-inline-end: -40px;
-    }
-
-    40% {
-        margin-inline-end: 40px;
-    }
-
-    60% {
-        margin-inline-end: -20px;
-    }
-
-    80% {
-        margin-inline-end: 20px;
-    }
-
-    100% {
-        margin-inline-end: 0px;
-    }
-}
-
-@keyframes breath1 {
-    0% {
-        box-shadow: 0px 0px 30px #3bb1a7;
-    }
-
-    25% {
-        box-shadow: 0px 0px 60px #3bb1a7;
-    }
-
-    50% {
-        box-shadow: 0px 0px 10px #3bb1a7;
-    }
-
-    75% {
-        box-shadow: 0px 0px 60px #3bb1a7;
-    }
-
-    100% {
-        box-shadow: 0px 0px 30px #3bb1a7;
-    }
-}
-
-@keyframes breath2 {
-    0% {
-        box-shadow: 0px 0px 30px #6e6423;
-    }
-
-    25% {
-        box-shadow: 0px 0px 60px #6e6423;
-    }
-
-    50% {
-        box-shadow: 0px 0px 10px #6e6423;
-    }
-
-    75% {
-        box-shadow: 0px 0px 60px #6e6423;
-    }
-
-    100% {
-        box-shadow: 0px 0px 30px #6e6423;
-    }
-}
-
 
 html {
     scroll-behavior: smooth;
@@ -171,7 +101,7 @@ body {
 }
 
 .nv-title {
-    width: clamp(16rem, 22rem, 30vw);
+    padding-inline: 1rem;
 
     height: 100%;
     display: flex;
@@ -209,6 +139,10 @@ body {
     border-bottom: 2px solid #3bb1a7;
 }
 
+.nv-elements button:nth-child(5):hover {
+    border-bottom: 2px solid #b1953b;
+}
+
 
 .site-firstcon {
     width: 100%;
@@ -221,11 +155,13 @@ body {
 }
 
 .site-firstcon:hover .site-firstcon-back {
-    filter: blur(1.5px);
-    -webkit-filter: blur(1.5px);
+    filter: saturate(80%);
+    -webkit-filter: saturate(80%);
     background-size: 105%;
 
+
 }
+
 
 .site-firstcon-back {
     width: 100%;
@@ -234,13 +170,18 @@ body {
     background-image: url('images/city.jpg');
     background-position: 50%;
     background-size: 100%;
-    filter: none;
+    filter: saturate(80%);
+    -webkit-filter: saturate(80%);
     transition: ease-in 1000ms;
     -webkit-transition: ease-in 1000ms;
     -moz-transition: ease-in 1000ms;
     -ms-transition: ease-in 1000ms;
     -o-transition: ease-in 1000ms;
-    -webkit-filter: none;
+}
+
+.site-firstcon-back:hover {
+    filter: saturate(80%);
+    -webkit-filter: saturate(80%);
 }
 
 .site-firstcon-con {
@@ -370,7 +311,7 @@ body {
     background-size: cover;
     height: clamp(55rem, 55rem, 75vw);
     position: absolute;
-    opacity: 10%;
+    opacity: 5%;
     box-shadow: 0px 0px 30px #b5bdb6;
 
 }
@@ -378,46 +319,30 @@ body {
 .offer-plan1 {
     width: clamp(18rem, 33rem, 50vw);
     height: clamp(23rem, 35.5rem, 45vw);
-    background-image: linear-gradient(to left, #3bb1a7, #2b857d);
+    background-color: #1a1a1a;
     position: relative;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
-    border-radius: 10%;
-    box-shadow: 0px 0px 30px#236e68;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    color: #3bb1a7;
+
+    box-shadow: 0px 0px 10px #174843;
+
+
 
 }
 
-.offer-plan1:hover {
-    animation-name: breath1;
-    animation-duration: 2s;
-
-    box-shadow: 0px 0px 30px#236e68;
-}
 
 .offer-plan2 {
     width: clamp(18rem, 33rem, 50vw);
     height: clamp(23rem, 35.5rem, 45vw);
-    background-image: linear-gradient(to right, #d0de0c, #a79813);
-    box-shadow: 0px 0px 30px #6e6423;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    background-color: #1a1a1a;
+
+
     position: relative;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
-
-}
-
-.offer-plan2:hover {
-    animation-name: breath2;
-    animation-duration: 2s;
-    box-shadow: 0px 0px 30px #6e6423;
+    color: #b8c40d;
+    box-shadow: 0px 0px 10px #4a4f07;
 
 }
 
@@ -445,17 +370,25 @@ body {
     bottom: 0;
     margin: 3%;
     height: clamp(2rem, 3rem, 5vw);
-    border: none;
-    background-color: #1a1a1a;
-    font-family: 'Space Grotesk', sans-serif;
 
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(0.9rem, 1.2rem, 2vw);
     font-weight: bold;
-    border-radius: 1vw;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
+}
+
+.choos_but1 {
+
+    background-color: #171717;
+    border: none;
+    border-bottom: 2px solid #3bb1a7;
+    color: #3bb1a7;
+}
+
+.choos_but2 {
+    background-color: #171717;
+    border: none;
+    border-bottom: 2px solid #a79813;
+    color: #a79813;
 }
 
 .plan h1 {
@@ -470,34 +403,27 @@ body {
     font-size: clamp(1.1rem, 1.4rem, 2vw);
 }
 
-.txbl {
-
-    color: #3bb1a7;
-}
-
-.txyl {
-    color: #d0de0c;
-}
-
-.txblb {
-
-    color: #13e6d4;
-}
-
-.txylb {
-    color: #d1df0f;
-}
-
-.txdv {
+.txdv1 {
+    width: 60%;
     text-align: center;
     background-color: #1a1a1a;
-    padding: 4%;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    border-bottom: 4px solid #3bb1a7;
+    color: #d3d2d2;
 }
+
+.txdv2 {
+    color: #d3d2d2;
+    width: 60%;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    border-bottom: 4px solid #a79813;
+
+}
+
 
 .desc {
     cursor: default;
@@ -515,7 +441,7 @@ body {
 .desc h3 {
     font-family: 'Space Grotesk', sans-serif;
     margin: 0.1rem;
-    font-size: clamp(0.7rem, 1.4rem, 2vw);
+    font-size: clamp(0.7rem, 1.2rem, 2vw);
     text-align: center;
 }
 
@@ -524,6 +450,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     margin: 2%;
     font-size: clamp(0.5rem, 1rem, 2vw);
+    font-weight: normal;
 }
 
 
@@ -557,7 +484,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #1f1f1f;
 
     opacity: 90%;
 
@@ -566,7 +493,7 @@ body {
     -moz-transition: ease-in 300ms;
     -ms-transition: ease-in 300ms;
     -o-transition: ease-in 300ms;
-    border-bottom: 4px solid #3bb1a7;
+    border-bottom: 4px solid #2e8f86;
 }
 
 .news-sec:hover {
@@ -582,7 +509,6 @@ body {
 
 .news {
     cursor: default;
-
     width: clamp(18rem, 60rem, 65vw);
     height: clamp(21rem, 35rem, 50vw);
     background-color: #1a1a1a;
@@ -590,39 +516,49 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    border-bottom: 4px solid #b1953b;
+    filter: drop-shadow(0px 0px 5px #333333);
+    border-bottom: 4px solid #2e8f86;
     transition: ease 300ms;
     -webkit-transition: ease-in 300ms;
     -moz-transition: ease-in 300ms;
     -ms-transition: ease-in 300ms;
     -o-transition: ease-in 300ms;
-    opacity: 90%;
+    opacity: 100%;
+    -webkit-filter: drop-shadow(0px 0px 5px #333333);
 }
 
-.news:hover {
+.news:hover .news-img {
     opacity: 100%;
+    filter: none;
 }
 
 .news-con {
     width: 100%;
     height: 90%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .news-img {
-    width: 100%;
-    height: 100%;
+    transition: ease-in 300ms;
+    opacity: 93%;
+    filter: saturate(80%);
+    width: 90%;
+    height: 90%;
     background-image: url('images/house.jpg');
     background-position: 50%;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
+    -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -ms-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+    -webkit-filter: saturate(80%);
 }
 
 .news-text {
@@ -652,19 +588,16 @@ body {
     margin: 2%;
     width: clamp(7rem, 14rem, 30vw);
     height: clamp(2.5rem, 6rem, 3vw);
-    background-color: #3b88b1;
-    filter: drop-shadow(0px 0px 10px #2b6685);
-    -webkit-filter: drop-shadow(0px 0px 10px #2b6685);
+    background-color: #1f1f1f;
+    border: none;
+    border-bottom: 4px solid #2e8f86;
     font-family: 'Space Grotesk', sans-serif;
-    border-radius: clamp(1rem, 1rem, 4vw);
+
     font-size: clamp(0.8rem, 1.2rem, 2vw);
     font-weight: bold;
-    border: none;
+
     color: #ededed;
-    -webkit-border-radius: clamp(1rem, 1rem, 4vw);
-    -moz-border-radius: clamp(1rem, 1rem, 4vw);
-    -ms-border-radius: clamp(1rem, 1rem, 4vw);
-    -o-border-radius: clamp(1rem, 1rem, 4vw);
+
 }
 
 .news-text h2 {
@@ -829,7 +762,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     color: #cacaca;
     font-weight: normal;
-
+    font-size: clamp(1.1rem, 1.4rem, 2vw)
 }
 
 
@@ -880,23 +813,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 35%;
+
 }
 
 .sem {
     font-family: 'Space Grotesk', sans-serif;
     color: #ffffff;
-    font-weight: lighter;
+    font-weight: normal;
     width: clamp(5.5rem, 8rem, 10vw);
     height: clamp(2.1rem, 3rem, 5vw);
     font-size: clamp(0.7rem, 0.9rem, 2vw);
-    background-color: #3bb1a7;
-    border: 1px solid #3ebcb2;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    box-shadow: 0px 0px 10px #30988f;
+    background-color: #c3b214;
+    border: none;
+    border-bottom: 4px solid #a79813;
+    box-shadow: 0px 0px 8px #c3b214;
     transition: ease 500ms;
     -webkit-transition: ease 500ms;
     -moz-transition: ease 500ms;
@@ -905,10 +835,11 @@ body {
 }
 
 .wel-bt button:hover {
-    background-color: #40bfb4;
 
-    box-shadow: 0px 0px 15px #38b1a7;
+    background-color: #b0a014;
+    box-shadow: 0px 0px 15px #a19314;
 }
+
 
 
 .tit-spgro {
@@ -970,32 +901,27 @@ body {
     .offer-plan1 {
         width: clamp(14rem, 25rem, 50vw);
         height: clamp(24rem, 30.5rem, 35vw);
-        background-image: linear-gradient(to left, #3bb1a7, #2b857d);
+        background-color: #1a1a1a;
         position: relative;
         filter: grayscale(40%);
         -webkit-filter: grayscale(40%);
-        border-radius: 10%;
-        box-shadow: 0px 0px 30px#236e68;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
+        color: #3bb1a7;
+
+        box-shadow: 0px 0px 10px #174843;
 
     }
 
     .offer-plan2 {
         width: clamp(14rem, 25rem, 50vw);
         height: clamp(24rem, 30.5rem, 35vw);
-        background-image: linear-gradient(to right, #d0de0c, #a79813);
-        box-shadow: 0px 0px 30px #6e6423;
-        border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
+        background-color: #1a1a1a;
+
+
         position: relative;
         filter: grayscale(40%);
         -webkit-filter: grayscale(40%);
+        color: #b8c40d;
+        box-shadow: 0px 0px 10px #4a4f07;
 
     }
 
@@ -1044,6 +970,7 @@ body {
         display: flex;
         width: 20%;
         height: 100%;
+
 
         display: flex;
         justify-content: center;
@@ -1104,7 +1031,7 @@ body {
         height: 100%;
         position: relative;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
 
         z-index: 7;
@@ -1112,8 +1039,7 @@ body {
     }
 
     .nv-title {
-        width: 80%;
-
+        padding-inline: 1rem;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -1143,43 +1069,42 @@ body {
         -moz-transition: ease-in 1000ms;
         -ms-transition: ease-in 1000ms;
         -o-transition: ease-in 1000ms;
-        -webkit-filter: none;
-    }
 
-
-}
-
-
-
-
-
-
-@media screen and (max-width: 855px) {
-
-
-    .site-firstcon:hover .site-firstcon-back {
-        filter: blur(1.5px);
-        -webkit-filter: blur(1.5px);
-        background-size: cover;
 
 
     }
 
-    .site-firstcon-back {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-image: url('images/city.jpg');
-        background-position: 50%;
-        background-size: cover;
-        filter: none;
-        transition: ease-in 1000ms;
-        -webkit-transition: ease-in 1000ms;
-        -moz-transition: ease-in 1000ms;
-        -ms-transition: ease-in 1000ms;
-        -o-transition: ease-in 1000ms;
-        -webkit-filter: none;
+
+
+
+
+
+    @media screen and (max-width: 855px) {
+
+
+        .site-firstcon:hover .site-firstcon-back {
+            filter: blur(1.5px);
+            -webkit-filter: blur(1.5px);
+            background-size: cover;
+
+
+        }
+
+        .site-firstcon-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url('images/city.jpg');
+            background-position: 50%;
+            background-size: cover;
+            filter: none;
+            transition: ease-in 1000ms;
+            -webkit-transition: ease-in 1000ms;
+            -moz-transition: ease-in 1000ms;
+            -ms-transition: ease-in 1000ms;
+            -o-transition: ease-in 1000ms;
+            -webkit-filter: none;
+        }
+
+
     }
-
-
-}
