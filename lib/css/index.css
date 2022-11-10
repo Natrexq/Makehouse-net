@@ -40,6 +40,8 @@ font-family: 'Space Grotesk', sans-serif;
 
 
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -68,6 +70,108 @@ body {
     background-color: #2d2d2d;
 }
 
+.screen-message {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 7;
+    display: none;
+
+}
+
+.message-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%;
+}
+
+.cookies {
+    filter: drop-shadow(0px -1px 10px #c3a131);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    background-color: #151515;
+    bottom: 0;
+    -webkit-filter: drop-shadow(0px -1px 5px #c3a131);
+}
+
+.cookies-bar {
+
+    width: clamp(20rem, 50%, 30vw);
+    height: 100%;
+    background-color: #151515;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.bar-tx {
+
+    width: 100%;
+    height: 75%;
+    background-color: #151515;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bar-tx h2 {
+    padding-left: 1rem;
+    color: #c3a131;
+    font-weight: normal;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.4rem, 2rem, 3vw);
+}
+
+.bar-tx h3 {
+    padding-left: 1rem;
+    color: #c3a131;
+    font-weight: normal;
+    font-size: clamp(0.8rem, 1.2rem, 3vw);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0.1rem;
+}
+
+.bar-but {
+
+
+    padding: none;
+    width: 100%;
+    height: 25%;
+    background-color: #151515;
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 2rem;
+}
+
+.bar-but button {
+    margin-inline: 0.5%;
+    width: clamp(5rem, 8rem, 10vw);
+    height: clamp(2rem, 2rem, 5vw);
+    background-color: #c3a131;
+    color: #151515;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    border: none;
+    font-size: clamp(0.7rem, 1rem, 3vw);
+    border-bottom: 4px solid #a38627;
+
+
+}
 
 .site-navbar {
     width: 100%;
@@ -139,8 +243,19 @@ body {
     border-bottom: 2px solid #3bb1a7;
 }
 
-.nv-elements button:nth-child(5):hover {
-    border-bottom: 2px solid #b1953b;
+
+.nv-elements button:nth-child(6) {
+    border-bottom: 2px solid #b13b3b;
+
+}
+
+.nv-elements button:nth-child(6):hover {
+    border-bottom: 4px solid #b13b3b;
+
+}
+
+#reset {
+    display: none;
 }
 
 
@@ -897,6 +1012,9 @@ body {
 }
 
 @media screen and (max-width: 1240px) {
+    #reset {
+        display: none;
+    }
 
     .offer-plan1 {
         width: clamp(14rem, 25rem, 50vw);
@@ -956,6 +1074,9 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+    #reset {
+        display: none;
+    }
 
     #home {
         width: 28px;
@@ -1081,6 +1202,9 @@ body {
 
     @media screen and (max-width: 855px) {
 
+        #reset {
+            display: none;
+        }
 
         .site-firstcon:hover .site-firstcon-back {
             filter: blur(1.5px);
@@ -1108,3 +1232,4 @@ body {
 
 
     }
+}
