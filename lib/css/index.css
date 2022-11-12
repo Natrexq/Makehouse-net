@@ -70,6 +70,31 @@ body {
     background-color: #2d2d2d;
 }
 
+
+#project {
+    margin: clamp(1rem, 2rem, 3vw);
+    width: clamp(1.5rem, 2.5rem, 4vw);
+    height: clamp(1.5rem, 2.5rem, 4vw);
+    background-image: url('/lib/css/images/githublogo.png');
+    background-size: cover;
+    z-index: 7;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 30%;
+    transition: ease-in 300ms;
+    -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -ms-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+}
+
+#project:hover,
+#project:focus {
+    opacity: 40%;
+}
+
+
 .screen-message {
     width: 100%;
     height: 100%;
@@ -967,6 +992,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #dad9d9;
     font-weight: normal;
+    font-size: clamp(0.9rem, 1.2rem, 2vw);
+}
+
+.tit-mont_mm {
+    font-family: 'Montserrat', sans-serif;
+    color: #dad9d9;
+    font-weight: normal;
+    font-size: clamp(1.1rem, 1.2rem, 2vw);
 }
 
 .fsize1 {
